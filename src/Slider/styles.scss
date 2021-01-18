@@ -1,0 +1,51 @@
+$accentColor: #5165f9;
+$bgColor: #e1e1e1;
+$dropShadow: 0px 0px 6px rgba(0, 0, 0, 0.16);
+
+.container {
+  display: block;
+  padding: 0.875em 1.5em;
+  box-sizing: border-box;
+  width: fit-content;
+  height: fit-content;
+  user-select: none;
+}
+.track {
+  height: 0.75em;
+  width: 12em;
+  background-color: $bgColor;
+  border-radius: 0.5em;
+  position: relative;
+  display: block;
+}
+.thumb {
+  display: block;
+  height: 1.5em;
+  width: 1.5em;
+  background-color: $accentColor;
+  border-radius: 50%;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 0;
+  box-shadow: $dropShadow;
+  border: 1px solid white;
+  box-sizing: border-box;
+  transform-origin: center;
+  transition: transform 0.2s;
+  &:hover {
+    cursor: pointer;
+  }
+}
+.activeThumb {
+  transform: translate(-50%, -50%) scale(1.2);
+}
+.trackHighlighted {
+  position: absolute;
+  width: 0%;
+  left: 0;
+  top: 0;
+  height: 100%;
+  border-radius: 0.5em;
+  background-color: $accentColor;
+}
