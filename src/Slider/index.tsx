@@ -19,7 +19,7 @@ export interface Props {
    */
   width?: string;
   /**
-   * fires on change start
+   * fires on change star t
    */
   onChangeStart?: (value: number) => void;
   /**
