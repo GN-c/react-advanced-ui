@@ -17,3 +17,5 @@ export const snapToClosest = (
 
 export const RadToDeg = 180 / Math.PI;
 export const DegToRad = Math.PI / 180;
+
+export const one = 1;
