@@ -1,6 +1,5 @@
 {
-  "homepage": "http://gn-c.github.io/react-advanced-ui",
-  "name": "rollup-react-library",
+   "name": "rollup-react-library",
   "version": "1.0.0",
   "description": "rollup react library",
   "main": "dist/rollup-react-library.umd.js",
@@ -51,7 +50,7 @@
   },
   "scripts": {
     "storybook": "start-storybook -p 6006",
-    "build-storybook": "build-storybook",
+    "build-storybook": "build-storybook -o docs-build",
     "build": "rollup -c"
   }
 }
