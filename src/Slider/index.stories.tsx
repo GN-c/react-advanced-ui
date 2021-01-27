@@ -2,7 +2,7 @@ import React from "react";
 import Slider, { Props } from "./index";
 
 export default {
-  title: "Slider",
+  title: "React advanced ui/Components",
   component: Slider,
   argTypes: {},
   parameters: { actions: { argTypesRegex: "^on.*" } },

@@ -2,7 +2,7 @@ import React from "react";
 import SteppedSlider, { Props } from "./index";
 
 export default {
-  title: "SteppedSlider",
+  title: "React advanced ui/Components",
   component: SteppedSlider,
   parameters: { actions: { argTypesRegex: "^on.*" } },
 };
