@@ -1,0 +1,21 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap");
+:root {
+  --react-advance-ui-accentColor: #5165f9;
+  --react-advance-ui-textColor: #5165f9;
+  --react-advance-ui-bgColor: #e1e1e1;
+  --react-advance-ui-dropShadow: 0px 0px 6px rgba(0, 0, 0, 0.16);
+  --react-advance-ui-scaleMultiplier: 1;
+  --react-advance-ui-fontFamily: "Roboto", sans-serif;
+}
+.disabled {
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    opacity: 0.5;
+  }
+}

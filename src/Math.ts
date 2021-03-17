@@ -3,8 +3,12 @@ export const map = (
   min: number,
   max: number,
   dMin: number,
-  dMax: number
-): number => ((value - min) / (max - min)) * (dMax - dMin) + dMin;
+  dMax: number,
+  clampValue: boolean = false
+): number =>
+  (((clampValue ? clamp(value, min, max) : value) - min) / (max - min)) *
+    (dMax - dMin) +
+  dMin;
 
 export const clamp = (value: number, min: number, max: number): number =>
   Math.max(min, Math.min(max, value));
@@ -17,5 +21,3 @@ export const snapToClosest = (
 
 export const RadToDeg = 180 / Math.PI;
 export const DegToRad = Math.PI / 180;
-
-export const one = 11;

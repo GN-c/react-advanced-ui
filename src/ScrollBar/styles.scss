@@ -1,0 +1,47 @@
+@use "../_main.scss";
+.container {
+  & > div {
+    overflow: hidden;
+  }
+  display: block;
+  position: relative;
+  &:hover {
+    .hiding {
+      opacity: 1;
+    }
+  }
+}
+
+.verticalBar {
+  position: absolute;
+  height: 100%;
+  width: 0.375em;
+  background-color: var(--react-advance-ui-bgColor);
+  top: 0;
+  user-select: none;
+  & > div {
+    width: 100%;
+    background-color: var(--react-advance-ui-accentColor);
+    position: absolute;
+    left: 0;
+  }
+}
+
+.horizontalBar {
+  position: absolute;
+  width: 100%;
+  height: 0.375em;
+  background-color: var(--react-advance-ui-bgColor);
+  left: 0;
+  user-select: none;
+  & > div {
+    height: 100%;
+    background-color: var(--react-advance-ui-accentColor);
+    position: absolute;
+    top: 0;
+  }
+}
+.hiding {
+  transition: all 0.3s;
+  opacity: 0;
+}

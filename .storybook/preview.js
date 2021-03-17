@@ -16,15 +16,7 @@ export const decorators = [
         alignItems: "center",
       }}
     >
-      <div
-        style={{
-          border: "1px solid #e1e1e1",
-          borderRadius: "0.5em",
-          background: "white",
-        }}
-      >
-        <Story />
-      </div>
+      <Story />
     </div>
   ),
 ];

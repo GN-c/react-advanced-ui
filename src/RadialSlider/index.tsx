@@ -111,11 +111,12 @@ export default function RadialSlider({
       -clamp(e.clientY - bounds.top, 0, bounds.height) +
       bounds.height / (1 + Math.max(0, Math.cos(angleOffset)));
     let value = map(
-      clamp(Math.atan2(x, y) + Math.PI, angleOffset, 2 * Math.PI - angleOffset),
+      Math.atan2(x, y) + Math.PI,
       angleOffset,
       2 * Math.PI - angleOffset,
       0,
-      1
+      1,
+      true
     );
     if (stepCount) value = snapToClosest(value, 1 / (stepCount - 1), 0);
     if (stepCount && value === state.value) return;

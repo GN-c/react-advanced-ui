@@ -1,0 +1,21 @@
+@use "../_main.scss";
+
+.container {
+  position: relative;
+  padding: 0.5em;
+  font-size: var(--react-advance-ui-scaleMultiplier);
+  border: 2px solid var(--react-advance-ui-bgColor);
+  border-radius: 5px;
+}
+.input {
+  font-family: var(--react-advance-ui-fontFamily);
+  color: var(--react-advance-ui-textColor);
+  font-size: 1em;
+  border: none;
+  &:focus {
+    outline: none;
+  }
+  //   &::placeholder {
+  //     color: lighten(var(--react-advance-ui-textColor), 50%);
+  //   }
+}
