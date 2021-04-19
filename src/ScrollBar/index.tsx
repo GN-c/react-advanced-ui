@@ -1,5 +1,5 @@
 import React, { useEffect, useRef, useState } from "react";
-import style from "./styles.scss";
+import * as style from "./styles.scss";
 
 import { prefix } from "inline-style-prefixer";
 import { map } from "../Math";

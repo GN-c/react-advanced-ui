@@ -1,5 +1,5 @@
 import React, { useRef, useState } from "react";
-import style from "./styles.scss";
+import * as style from "./styles.scss";
 
 import { map, clamp, DegToRad, RadToDeg, snapToClosest } from "../Math";
 import { prefix } from "inline-style-prefixer";
