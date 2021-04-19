@@ -1,13 +1,9 @@
 {
-  "name": "rollup-react-library",
+  "name": "react-advanced-ui",
   "version": "1.0.0",
-  "description": "rollup react library",
-  "main": "dist/rollup-react-library.umd.js",
-  "module": "dist/rollup-react-library.esm.js",
-  "repository": "http://github.com/dimpu/rollup-react-library.git",
-  "author": "dimpu",
-  "license": "MIT",
-  "private": false,
+  "main": "dist/react-advanced-ui.umd.js",
+  "module": "dist/react-advanced-ui.esm.js",
+  "repository": "https://github.com/GN-c/react-advanced-ui.git",
   "peerDependencies": {
     "react": "^16.13.1",
     "react-dom": "^16.13.1"
